@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
   :root {
     --background: #ffffff;
@@ -12,7 +10,7 @@
     --card-foreground: #0c0a09;
     --popover: #ffffff;
     --popover-foreground: #0c0a09;
-    --primary: #5E1F13;
+    --primary: #5e1f13;
     --primary-foreground: #fafaf9;
     --secondary: #fff2e0;
     --secondary-foreground: #1c1917;
@@ -39,7 +37,7 @@
     --card-foreground: #fafaf9;
     --popover: #0c0a09;
     --popover-foreground: #fafaf9;
-    --primary: #5E1F13;
+    --primary: #5e1f13;
     --primary-foreground: #1c1917;
     --secondary: #292524;
     --secondary-foreground: #fafaf9;
@@ -60,12 +58,21 @@
   }
 }
 
-
-
 @layer base {
   body {
     @apply bg-background text-foreground;
   }
+  .heading_style {
+    @apply text-2xl md:text-3xl font-bold relative w-fit;
+  }
+  /* .heading_style::after{
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: var(--primary);
+  bottom: 0;
+  right: -100%;
+} */
 }
-
-

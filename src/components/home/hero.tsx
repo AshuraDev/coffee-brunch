@@ -16,7 +16,7 @@ export const Hero = () => {
           <Button className="mt-8">🍽️ Explorer notre menu</Button>
         </div>
         {/* image section */}
-        <div className="w-full min-h-[70vh] flex items-center justify-center relative bg-secondary  overflow-hidden">
+        <div className="w-full min-h-[70vh] flex items-center justify-center relative bg-secondary rounded-lg overflow-hidden">
           <HeroImage />
         </div>
       </div>
