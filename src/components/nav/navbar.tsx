@@ -41,7 +41,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="max-w-6xl m-auto">
+    <nav className="max-w-7xl m-auto">
       <div className="flex items-center justify-between p-4 md:p-6 h-16">
         <span className="font-bold text-2xl text-primary">Cafeo ☕</span>
         <div className="">
@@ -60,7 +60,7 @@ export const Navbar = () => {
         ))}
       </ul>
         </div>
-        <div className="">
+        <div className="hidden md:block">
             <Button size={"sm"}>Contactez-nous
                 <Phone className="h-6 w-6 ml-2"/>
             </Button>
