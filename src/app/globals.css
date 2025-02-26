@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  /* scroll-snap-type: y mandatory; */
+  scroll-behavior: smooth;
+}
+
 @layer base {
   :root {
     --background: #ffffff;
@@ -65,14 +70,23 @@
   .heading_style {
     @apply text-2xl md:text-3xl font-bold relative w-fit;
   }
-  /* .heading_style::after{
-  content: "";
-  position: absolute;
-  height: 4px;
-  width: 200px;
-  border-radius: 100px;
-  background-color: var(--primary);
-  bottom: 0;
-  right: -100%;
-} */
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
