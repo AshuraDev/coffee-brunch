@@ -32,10 +32,10 @@ export const MenuItem = ({ items }: MenuItemProps) => (
           show: { opacity: 1, y: 0 },
         }}
       >
-        <div className="relative h-36 md:h-56 aspect-square">
+        <div className="relative h-36 md:h-48 aspect-square">
           <Image src={item.image || "/placeholder.svg"} alt={item.name} fill className="object-cover" />
         </div>
-        <div className="mt-1">
+        <div className="mt-1 font-dancing_Script">
           <p className="font-bold text-lg text-primary">{item.name}</p>
           <p className="text-base">{item.price} FCFA</p>
         </div>

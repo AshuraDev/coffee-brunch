@@ -8,7 +8,7 @@ export const Hero = () => {
       <div className="flex w-full justify-center items-center flex-col gap-8 md:flex-row">
         <div className=" w-full transition-all">
           <h3 className="text-sm mb-2">Une p&apos;tite pause café☕?</h3>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary font-bold">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary font-bold font-dancing_Script">
             Wake Up & Brunch – L’adresse parfaite pour se régaler
           </h1>
           <p className="text-lg text-muted-foreground mt-2">

@@ -65,28 +65,47 @@ html {
 
 @layer base {
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-montserrat;
   }
   .heading_style {
-    @apply text-2xl md:text-3xl font-bold relative w-fit;
+    @apply text-2xl md:text-3xl font-bold font-dancing_Script;
   }
 }
 
-
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
 .no-scrollbar {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.incline {
+  transform: rotate(15deg);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-50% - 4px));
+  }
+}
+
+.slider-track {
+  animation: scroll var(--scroll-duration, 20s) linear infinite;
+}
+
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+.slider-item img {
+  transition: transform 0.3s ease;
+}
+
+.slider-item:hover img {
+  transform: scale(1.1);
 }

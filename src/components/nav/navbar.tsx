@@ -43,7 +43,7 @@ export const Navbar = () => {
   return (
     <nav className="max-w-7xl m-auto">
       <div className="flex items-center justify-between p-4 md:p-6 h-16">
-        <span className="font-bold text-2xl text-primary">Cafeo ☕</span>
+        <span className="font-bold text-4xl text-primary font-dancing_Script">Cafeo ☕</span>
         <div className="">
         <ul className="hidden md:flex gap-x-4 items-center gap-y-4 transition-all">
         {links.map((link, i) => (

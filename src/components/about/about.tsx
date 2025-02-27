@@ -4,10 +4,10 @@ export const About = () => {
   return (
     <section id="a-propos" className="pt-16">
       <h2 className="heading_style">À propos de nous</h2>
-      <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
+      <div className="mt-10 grid md:grid-cols-2 gap-8 place-items-center">
         <AboutImage />
-        <div className="w-full">
-          <h3 className="mb-4 font-bold text-xl text-primary">
+        <div className="w-full p-4">
+          <h3 className="mb-4 font-bold text-2xl text-primary font-dancing_Script">
             Wake Up & Brunch
           </h3>
           <p className="text-justify  text-sm md:text-base ">
